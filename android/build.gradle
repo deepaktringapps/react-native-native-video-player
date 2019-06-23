@@ -23,8 +23,9 @@ android {
 }
 
 dependencies {
+    testImplementation 'junit:junit:4.12'
+    
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
     implementation "com.android.support:support-compat:${safeExtGet('supportLibVersion', '+')}"
     implementation "com.facebook.react:react-native:${safeExtGet('reactNativeVersion', '+')}"
 }
